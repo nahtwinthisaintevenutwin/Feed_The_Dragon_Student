@@ -75,11 +75,11 @@ display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 #       * score_rect at the top-left (e.g., (10, 10))
 #       * title_rect centered horizontally at the top
 #       * lives_rect at the top-right (e.g., (WINDOW_WIDTH - 10, 10))
-game_over_text = make_text("GAMEOVER",  GREEN, DARKGREEN)
+game_over_text = make_text(font, "GAMEOVER",  GREEN, DARKGREEN)
 game_over_rect = game_over_text.get_rect()
 game_over_rect.center = (WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2)
 
-continue_text = make_text("Press any key to play again", GREEN, DARKGREEN)
+continue_text = make_text(font, "Press any key to play again", GREEN, DARKGREEN)
 continue_rect = continue_text.get_rect()
 continue_rect.center = (WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2 + 32)
 
